@@ -39,14 +39,15 @@ body {
 
 .card {
     display: grid;
-    grid-template-columns: 250px;
+    grid-template-columns: 270px;
     grid-template-areas: "upper""middle""lower";
     grid-template-rows: 80px auto 65px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 2rem;
     overflow: hidden;
-    padding: 1rem;
+    padding: 0.85rem 0.75rem;
     background-color: var(--white);
+    box-shadow: 0px 2px 15px 7px rgba(0, 0, 0, 0.15);
 }
 
 .card>* {
@@ -116,7 +117,7 @@ body {
 .one {
     justify-self: start;
     background-color: var(--prbackground1);
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 1rem;
     border-top-left-radius: 0.75rem;
     border-bottom-left-radius: 0.2rem;
@@ -151,7 +152,7 @@ body {
 .two {
     justify-self: end;
     background-color: var(--white);
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 1rem;
     border-top-right-radius: 0.75rem;
     border-bottom-right-radius: 0.2rem;
@@ -174,7 +175,7 @@ body {
 .three {
     justify-self: start;
     background-color: var(--white);
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 1rem;
     border-top-left-radius: 0.75rem;
     border-bottom-left-radius: 0.2rem;
@@ -289,7 +290,7 @@ body {
 .icon {
     position: absolute;
     content: "";
-    right: 4.85rem;
+    right: 4.25rem;
 }
 
 .icon a{
