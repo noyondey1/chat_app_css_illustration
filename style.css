@@ -361,10 +361,8 @@ main::after {
     position: absolute;
     content: "";
     right: 1.75rem;
-}
-
-.icon a {
     color: var(--submit-button-background);
+    cursor: pointer;
 }
 
 .searchbox input::placeholder {
