@@ -42,12 +42,11 @@ body {
     grid-template-columns: 270px;
     grid-template-areas: "upper""middle""lower";
     grid-template-rows: 80px auto 65px;
-    /* border: 1px solid black; */
     border-radius: 2rem;
     overflow: hidden;
     padding: 0.85rem 0.75rem;
     background-color: var(--white);
-    box-shadow: 0px 2px 15px 7px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 15px 1.75rem 5px rgba(0, 0, 0, 0.1);
 }
 
 .card>* {
@@ -59,11 +58,44 @@ body {
     grid-area: upper;
     background: linear-gradient(to right, var(--light-violet), var(--light-magenta));
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
-    padding: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.part-1{
+    height: 2rem;
+    width: 9rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+    display: inline-block;
+    place-self: center;
+    transform: translateY(-1.15rem);
+}
+
+.part-2{
+    justify-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-0.25rem);
+}
+
+.upper .left-part{
+    display: flex;
+    align-items: center;
+}
+
+.upper .right-part{
+    color: white;
+}
+
+.upper .icon-1{
+    color: white;
 }
 
 .upper .image {
@@ -71,7 +103,8 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    padding: 0.15rem;
+    padding: 0.1rem;
+    margin-left: 0.5rem;
 }
 
 .image img {
@@ -82,7 +115,7 @@ body {
 
 .title {
     color: var(--white);
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 
 .title h3 {
@@ -198,7 +231,7 @@ body {
 .button {
     background: linear-gradient(to right, var(--light-magenta), var(--light-violet));
     margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.65rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,7 +326,7 @@ body {
     right: 4.25rem;
 }
 
-.icon a{
+.icon a {
     color: var(--submit-button-background);
 }
 
@@ -305,21 +338,23 @@ body {
 
 /* text */
 
-.text{
-    padding-top: 3rem;
+.text {
     text-align: center;
+    /* padding: 0px 1rem 0px 1rem; */
+    padding-bottom: 2.5rem;
 }
 
-.text h1{
-    font-size: 2.3rem;
+.text h1 {
+    font-size: 2.8rem;
     font-weight: 500;
     color: var(--main-heading);
     padding-bottom: 1.75rem;
 }
 
-.text p{
+.text p {
     color: var(--paragraph);
     line-height: 1.75;
+    padding: 0 2rem 0 2rem;
 }
 
 
@@ -328,6 +363,7 @@ body {
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .attribution a {
